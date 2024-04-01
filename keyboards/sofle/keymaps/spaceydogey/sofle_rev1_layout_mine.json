@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "notes": "",
+  "notes": "Ma configuration",
   "documentation": "\"This file is a QMK Configurator export. You can import this at <https://config.qmk.fm>. It can also be used directly with QMK's source code.\n\nTo setup your QMK environment check out the tutorial: <https://docs.qmk.fm/#/newbs>\n\nYou can convert this file to a keymap.c using this command: `qmk json2c {keymap}`\n\nYou can compile this keymap using this command: `qmk compile {keymap}`\"\n",
   "keyboard": "sofle/rev1",
   "keymap": "sofle_rev1_layout_spaceydogey_1",
@@ -60,10 +60,10 @@
       "KC_LGUI",
       "KC_LALT",
       "KC_LCTL",
-      "MO(2)",
+      "MO(1)",
       "KC_SPC",
       "KC_ENT",
-      "MO(3)",
+      "MO(2)",
       "KC_RCTL",
       "KC_RALT",
       "KC_RGUI"
@@ -122,10 +122,10 @@
       "KC_TRNS",
       "KC_TRNS",
       "KC_TRNS",
-      "KC_TRNS",
+      "KC_NO",
       "KC_TRNS",
       "KC_BSPC",
-      "MO(4)",
+      "MO(3)",
       "KC_TRNS",
       "KC_TRNS",
       "KC_TRNS"
@@ -184,10 +184,10 @@
       "KC_TRNS",
       "KC_TRNS",
       "KC_TRNS",
-      "MO(4)",
+      "MO(3)",
       "KC_DEL",
       "KC_TRNS",
-      "KC_TRNS",
+      "KC_NO",
       "KC_TRNS",
       "KC_TRNS",
       "KC_TRNS"
@@ -246,14 +246,14 @@
       "KC_TRNS",
       "KC_TRNS",
       "KC_TRNS",
-      "KC_TRNS",
       "KC_NO",
       "KC_NO",
-      "KC_TRNS",
+      "KC_NO",
+      "KC_NO",
       "KC_TRNS",
       "KC_TRNS",
       "KC_TRNS"
     ]
   ],
-  "author": ""
+  "author": "Spaceydogey"
 }

@@ -78,16 +78,19 @@ void print_status_narrow(void) {
     oled_write_ln_P(PSTR("LAYER"), false);
     switch (get_highest_layer(layer_state)) {
         case 0:
-            oled_write_P(PSTR("Base\n"), false);
+            oled_write_P(PSTR("Base"), false);
             break;
         case 1:
-            oled_write_P(PSTR("Raise"), false);
+            oled_write_P(PSTR("Smbl"), false);
             break;
         case 2:
-            oled_write_P(PSTR("Lower"), false);
+            oled_write_P(PSTR("Ctrl"), false);
+            break;
+        case 3:
+            oled_write_P(PSTR("OS"), false);
             break;
         default:
-            oled_write_ln_P(PSTR("Undef"), false);
+            oled_write_P(PSTR("Undef"), false);
     }
     oled_write_P(PSTR("\n\n"), false);
     led_t led_usb_state = host_keyboard_led_state();
@@ -115,15 +118,15 @@ bool encoder_update_kb(uint8_t index, bool clockwise) {
     }
     if (index == 0) {
         if (clockwise) {
-            tap_code(KC_VOLU);
+            tap_code(KC_WH_L);
         } else {
-            tap_code(KC_VOLD);
+            tap_code(KC_WH_R);
         }
     } else if (index == 1) {
         if (clockwise) {
-            tap_code(KC_PGDN);
+            tap_code(KC_WH_D);
         } else {
-            tap_code(KC_PGUP);
+            tap_code(KC_WH_U);
         }
     }
     return true;
